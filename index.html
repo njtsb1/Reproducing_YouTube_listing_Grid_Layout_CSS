@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Grid YouTube Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <div class="brand" aria-hidden="true">
+        <svg width="36" height="24" viewBox="0 0 36 24" aria-hidden="true">
+          <rect width="36" height="24" rx="4" fill="#FF0000"></rect>
+          <polygon points="14,6 24,12 14,18" fill="#fff"></polygon>
+        </svg>
+        <span class="brand-text" data-i18n="brand">YouGrid</span>
+      </div>
+
+      <div class="controls">
+        <label class="search" for="searchInput">
+          <input id="searchInput" type="search" placeholder="Search" aria-label="Search videos" />
+        </label>
+
+        <div class="toggles" role="toolbar" aria-label="Theme and language controls">
+          <button id="themeToggle" class="icon-btn" aria-pressed="false" aria-label="Toggle theme">
+            <span class="icon moon" aria-hidden="true">🌙</span>
+            <span class="icon sun" aria-hidden="true">☀️</span>
+          </button>
+
+          <label for="langSelect" class="visually-hidden">Language</label>
+          <select id="langSelect" aria-label="Select language">
+            <option value="en-US">EN-US</option>
+            <option value="pt-BR">PT-BR</option>
+            <option value="es-ES">ES-ES</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <nav class="main-nav" role="navigation" aria-label="Main">
+      <ul>
+        <li><a href="#" data-i18n="nav.home">Home</a></li>
+        <li><a href="#" data-i18n="nav.shorts">Shorts</a></li>
+        <li><a href="#" data-i18n="nav.subs">Subscriptions</a></li>
+        <li><a href="#" data-i18n="nav.library">Library</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="site-main" role="main">
+    <section class="video-list" aria-label="Video list">
+      <!-- Example video cards -->
+      <article class="video-card" tabindex="0" aria-labelledby="title1">
+        <div class="thumb" role="img" aria-label="Thumbnail 1">
+          <img src="https://via.placeholder.com/360x202.png?text=Thumbnail+1" alt="Thumbnail 1" />
+          <span class="duration">12:54</span>
+        </div>
+        <div class="meta">
+          <h3 id="title1" class="title" data-i18n="video1.title">How to start programming with what you have</h3>
+          <p class="channel" data-i18n="video1.channel">Dev Beginner</p>
+          <p class="stats" data-i18n="video1.stats">67K views • 4 years ago</p>
+        </div>
+      </article>
+
+      <article class="video-card" tabindex="0" aria-labelledby="title2">
+        <div class="thumb" role="img" aria-label="Thumbnail 2">
+          <img src="https://via.placeholder.com/360x202.png?text=Thumbnail+2" alt="Thumbnail 2" />
+          <span class="duration">46:36</span>
+        </div>
+        <div class="meta">
+          <h3 id="title2" class="title" data-i18n="video2.title">Diversity in technology first steps</h3>
+          <p class="channel" data-i18n="video2.channel">Tech Talks</p>
+          <p class="stats" data-i18n="video2.stats">66K views • 8 months ago</p>
+        </div>
+      </article>
+
+      <article class="video-card" tabindex="0" aria-labelledby="title3">
+        <div class="thumb" role="img" aria-label="Thumbnail 3">
+          <img src="https://via.placeholder.com/360x202.png?text=Thumbnail+3" alt="Thumbnail 3" />
+          <span class="duration">0:56</span>
+        </div>
+        <div class="meta">
+          <h3 id="title3" class="title" data-i18n="video3.title">Roblox programming course</h3>
+          <p class="channel" data-i18n="video3.channel">Game Dev</p>
+          <p class="stats" data-i18n="video3.stats">64K views • 3 years ago</p>
+        </div>
+      </article>
+
+      <article class="video-card" tabindex="0" aria-labelledby="title4">
+        <div class="thumb" role="img" aria-label="Thumbnail 4">
+          <img src="https://via.placeholder.com/360x202.png?text=Thumbnail+4" alt="Thumbnail 4" />
+          <span class="duration">12:09</span>
+        </div>
+        <div class="meta">
+          <h3 id="title4" class="title" data-i18n="video4.title">Business Model Canvas guide</h3>
+          <p class="channel" data-i18n="video4.channel">Business School</p>
+          <p class="stats" data-i18n="video4.stats">59K views • 6 years ago</p>
+        </div>
+      </article>
+
+      <article class="video-card" tabindex="0" aria-labelledby="title5">
+        <div class="thumb" role="img" aria-label="Thumbnail 5">
+          <img src="https://via.placeholder.com/360x202.png?text=Thumbnail+5" alt="Thumbnail 5" />
+          <span class="duration">1:45:33</span>
+        </div>
+        <div class="meta">
+          <h3 id="title5" class="title" data-i18n="video5.title">The future of education with AI</h3>
+          <p class="channel" data-i18n="video5.channel">EduTech</p>
+          <p class="stats" data-i18n="video5.stats">47K views • 1 month ago</p>
+        </div>
+      </article>
+
+      <article class="video-card" tabindex="0" aria-labelledby="title6">
+        <div class="thumb" role="img" aria-label="Thumbnail 6">
+          <img src="https://via.placeholder.com/360x202.png?text=Thumbnail+6" alt="Thumbnail 6" />
+          <span class="duration">2:52</span>
+        </div>
+        <div class="meta">
+          <h3 id="title6" class="title" data-i18n="video6.title">Hired season 2 trailer</h3>
+          <p class="channel" data-i18n="video6.channel">Channel X</p>
+          <p class="stats" data-i18n="video6.stats">40K views • 4 years ago</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <p class="copyright" data-i18n="footer">
+        © 2026 YouGrid Demo. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
