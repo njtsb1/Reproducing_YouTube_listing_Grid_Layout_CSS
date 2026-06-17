@@ -130,7 +130,7 @@
       if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
         card.classList.add('active');
-        // Simula ação: foco no título
+        // Simulate action: focus on the title.
         const title = card.querySelector('.title');
         if (title) title.focus();
         setTimeout(()=>card.classList.remove('active'), 300);
